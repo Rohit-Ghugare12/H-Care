@@ -33,6 +33,7 @@
         <activity
             android:name=".Home_Screen"
             android:exported="false"
+            android:theme="@style/ShowActionBar"
             android:windowSoftInputMode="adjustResize" />
     </application>
 
