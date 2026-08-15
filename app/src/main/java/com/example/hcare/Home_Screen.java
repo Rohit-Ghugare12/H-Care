@@ -48,7 +48,6 @@ public class Home_Screen extends AppCompatActivity {
 
         }
 
-
         return true;
     }
 }
