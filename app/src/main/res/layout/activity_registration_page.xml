@@ -1,10 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Registration_page">
+<ScrollView
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:background="#F3F4F4"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Registration_page">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="#EBE1EF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:fontFamily="@font/poppinsextrabold"
+                android:text="Registration Form"
+                android:textAlignment="center"
+                android:textColor="#BF1851"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/rgName"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/user_name_logo"
+                android:drawableLeft="@drawable/user_name_logo"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rgMobile"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/mobail_no"
+                android:drawableLeft="@drawable/mobail_no"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rgEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rgUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rgPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rgConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_edittext"
+                android:drawablePadding="10sp"
+                android:drawableTint="#8A3FFC"
+                android:hint="Confirm Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#C2454343"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppinsextrabold"
+                android:text="Register"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>
