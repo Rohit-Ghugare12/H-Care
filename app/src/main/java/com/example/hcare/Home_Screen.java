@@ -1,5 +1,6 @@
 package com.example.hcare;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -27,7 +29,6 @@ public class Home_Screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home_screen);
-
 
 
 
@@ -52,9 +53,7 @@ public class Home_Screen extends AppCompatActivity {
         else if (item.getItemId() == R.id.menuHomeLogOut )
         {
 
-            Intent intent = new Intent(Home_Screen.this,Login_activity.class);
-            startActivity(intent);
-            finishAffinity();
+           logout();
 
         }
         else if (item.getItemId() == R.id.menuHomeSetting )
@@ -67,6 +66,29 @@ public class Home_Screen extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void logout()
+    {
+
+        AlertDialog.Builder ad = new AlertDialog.Builder(Home_Screen.this);
+        ad.setTitle("LogOut");
+        ad.setMessage("Are you want to LogOut?");
+        ad.setPositiveButton("CANCEL", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        ad.setNegativeButton("LOGOUT", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                Intent i = new Intent(Home_Screen.this, Login_activity.class);
+                startActivity(i);
+                finishAffinity();
+            }
+        }).show().create();
     }
 
 }
