@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Home"
+        android:id="@+id/bottomHomeNavigation"
+        android:icon="@drawable/home_icon"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/bottomCamp"
+        android:title="My Camps"
+        android:icon="@drawable/camp"
+        app:showAsAction="always"/>
+    <item
+        android:title="Notification"
+        android:id="@+id/bottomaNotification"
+        android:icon="@drawable/notification"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Profile"
+        android:id="@+id/bottomaProfile"
+        android:icon="@drawable/my_profile"
+        app:showAsAction="always"/>
+
+</menu>

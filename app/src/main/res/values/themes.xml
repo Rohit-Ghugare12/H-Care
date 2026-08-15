@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.HCare" parent="Base.Theme.HCare" />
+    <style name="ShowActionBar" parent="Theme.Material3.DayNight"/>
 </resources>
