@@ -113,5 +113,6 @@ public class Registration_page extends AppCompatActivity {
                 }
             }
         });
+
     }
 }
