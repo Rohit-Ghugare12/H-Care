@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-black"
         android:paddingLeft="15sp"
         android:text="Welcome Back!"
@@ -94,7 +94,7 @@
             android:layout_marginTop="10sp"
             android:layout_marginLeft="80dp"
             android:layout_marginRight="20dp"
-            android:textSize="14dp"
+            android:textSize="13dp"
             android:fontFamily="@font/poppinsextrabold"/>
 
     </LinearLayout>
