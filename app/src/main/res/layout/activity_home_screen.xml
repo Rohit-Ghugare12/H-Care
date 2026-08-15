@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="75"
+        android:background="#E7D8EB"
         android:id="@+id/homeFrameLayout"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
