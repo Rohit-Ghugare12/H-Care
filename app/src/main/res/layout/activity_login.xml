@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="15sp"
+    tools:context=".Login_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="15sp"
+        android:text="Welcome Back!"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="15sp"
+        android:text="Login to continue"
+        android:textColor="#9B9999"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:hint="Enter Your Username, Email id"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/black"
+        android:textColorHint="#9B9999"
+        android:background="@drawable/shape_bg"
+        android:textSize="20dp"
+        android:paddingLeft="10sp"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:padding="10sp"
+        android:inputType="text"
+        android:drawablePadding="8dp"/>
+
+<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:hint="Enter Your Password"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#9B9999"
+        android:background="@drawable/shape_bg"
+        android:textSize="20dp"
+        android:paddingLeft="10sp"
+        android:drawableLeft="@drawable/password_lock_svgrepo_com"
+        android:padding="10sp"
+        android:inputType="text"
+        android:drawablePadding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbShowPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/alata"
+            android:text="Show Password"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:checked="false"
+            android:buttonTint="#0878A9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvForgetPassword"
+            android:textColor="#0878A9"
+            android:text="Forget Password"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/poppinsextrabold"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/alata"
+        android:background="@drawable/shape_bg1"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New user ?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:fontFamily="@font/alata"
+        android:layout_gravity="center"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRegisterhere"
+        android:text="Register here"
+        android:textStyle="bold"
+        android:textColor="#0878A9"
+        android:textSize="16dp"
+        android:fontFamily="@font/alata"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dclogo"
+        android:layout_margin="10sp"/>
+
+</LinearLayout>
